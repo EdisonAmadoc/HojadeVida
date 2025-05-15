@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el idioma del documento -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsive -->
+  <title>Hoja de Vida - Edison Felipe Amado Castro</title> <!-- Título de la pestaña -->
+
+  <!-- Enlace a tu archivo de estilos personalizado -->
+  <link rel="stylesheet" href="styles7.css">
+
+  <!-- Fuente externa desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Íconos desde Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-b3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- =========================================
+       ENCABEZADO con foto y datos personales
+       ========================================= -->
+  <header class="container header-grid">
+    <img src="imagen avatar.jpg" alt="Edison Felipe Amado Castro" class="avatar"> <!-- Imagen de perfil -->
+    <div>
+      <h1>Edison Felipe Amado Castro</h1> <!-- Nombre principal -->
+      <p class="subtitulo">Técnico en Desarrollo de Software</p> <!-- Título o profesión -->
+      <p>
+        Técnico en desarrollo de software con experiencia profesional diversificada, incluyendo 2 años en el sector alimenticio. 
+        Me destaco por mi capacidad para resolver problemas con rapidez y aportar soluciones creativas. 
+        Busco aplicar mis habilidades técnicas en el ámbito médico y crecer profesionalmente hacia mi meta de emprender en tecnología.
+      </p>
+    </div>
+  </header>
+
+  <!-- =========================================
+       CONTENIDO PRINCIPAL con dos columnas
+       ========================================= -->
+  <main class="container main-grid">
+
+    <!-- COLUMNA IZQUIERDA (Educación, Cursos, Experiencia) -->
+    <div>
+
+      <!-- Sección Educación -->
+      <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+          <li>
+            <h3>Técnico en Desarrollo de Software</h3>
+            <p>La Felicidad <span class="fecha">Ene 2017 - Dic 2023</span></p>
+            <p>Uniagustiniana <span class="fecha">Feb 2024 – Dic 2026</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Sección Cursos -->
+      <section id="cursos">
+        <h2>Cursos</h2>
+        <ul>
+          <li>
+            <h3>Cocina</h3>
+            <p>Mr Kings <span class="fecha">Dic 2023</span></p>
+            <h3>Natación</h3>
+            <p>Alcaldía Bogotá <span class="fecha">Ene 2022 - Mar 2024</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Sección Experiencia -->
+      <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+          <li>
+            <h3>Cocinero / Domiciliario</h3>
+            <p>Mr Kings <span class="fecha">Mar 2021 – Actualidad</span></p>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- COLUMNA DERECHA (Habilidades y Contacto) -->
+    <aside>
+
+      <!-- Sección Habilidades -->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+          <li>Creatividad</li>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Adaptabilidad</li>
+        </ul>
+      </section>
+
+      <!-- Sección Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ediamadoc2006@gmail.com">ediamadoc2006@gmail.com</a>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/EdisonAmadoc" target="_blank" rel="noopener">github.com/EdisonAmadoc</a>
+          </li>
+        </ul>
+      </section>
+
+     <!-- NUEVA SECCIÓN: Formulario de Contacto -->
+<!-- Esta sección contiene un formulario interactivo para que los usuarios puedan enviar mensajes -->
+<section id="formulario-contacto">
+    <!-- Título principal de la sección -->
+    <h2>Escríbeme</h2>
+    
+    <!-- Formulario de contacto con validación -->
+    <!-- El atributo novalidate desactiva la validación por defecto del navegador para implementar validación personalizada con JavaScript -->
+    <form id="contactoForm" novalidate>
+      
+      <!-- Campo para el nombre del usuario -->
+      <div>
+        <!-- Etiqueta asociada al campo de nombre -->
+        <label for="nombre">Nombre:</label>
+        <!-- Campo de entrada de texto para el nombre, marcado como obligatorio -->
+        <input type="text" id="nombre" name="nombre" required>
+        <!-- Contenedor para mostrar mensajes de error de validación del nombre -->
+        <span id="nombreError" class="error"></span>
+      </div>
+      
+      <!-- Campo para el correo electrónico -->
+      <div>
+        <!-- Etiqueta asociada al campo de email -->
+        <label for="email">Correo electrónico:</label>
+        <!-- Campo de entrada tipo email, facilita la validación y muestra teclados específicos en dispositivos móviles -->
+        <input type="email" id="email" name="email" required>
+        <!-- Contenedor para mostrar mensajes de error de validación del email -->
+        <span id="emailError" class="error"></span>
+      </div>
+      
+      <!-- Campo para el mensaje del usuario -->
+      <div>
+        <!-- Etiqueta asociada al área de texto -->
+        <label for="mensaje">Mensaje:</label>
+        <!-- Área de texto multilínea para el mensaje del usuario -->
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <!-- Contenedor para mostrar mensajes de error de validación del mensaje -->
+        <span id="mensajeError" class="error"></span>
+      </div>
+      
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Enviar</button>
+      
+      <!-- Contenedor para mostrar confirmación de envío exitoso -->
+      <div id="mensaje-enviado"></div>
+    </form>
+  </section>
+
+    </aside>
+  </main>
+
+  <!-- 
+       PIE DE PÁGINA
+       ========================================= -->
+  <footer class="container">
+    <p>&copy; 2025 Edison Felipe Amado Castro</p>
+  </footer>
+
+  <!-- =========================================
+       BOTÓN FLOTANTE de saludo
+       ========================================= -->
+  <button id="mensajeBtn" aria-label="Enviar un saludo">¡Saludar!</button>
+
+  <!-- =========================================
+       ENLACE A TU ARCHIVO DE JAVASCRIPT
+       ========================================= -->
+  <script src="script2.js"></script>
+
+</body>
+</html>
