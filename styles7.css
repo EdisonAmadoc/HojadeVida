@@ -1,0 +1,244 @@
+/* === TIPOGRAFÍA Y COLORES === */
+body {
+    font-family: 'Inter', sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #fef9f4; /* Fondo beige claro */
+    color: #020202; /* Color de texto principal */
+    line-height: 1.6; /* Altura de línea legible */
+}
+
+.container {
+    max-width: 960px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrado horizontal con margen vertical */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(167, 199, 231, 0.1); /* Sombra suave azul pastel */
+}
+
+/* === ENCABEZADO === */
+header {
+    background-color: #a7c7e7; /* Fondo azul pastel */
+    color: #080808; /* Color del texto */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Redondeo superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra elementos como avatar y título */
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #fef9f4; /* Subtítulo en beige claro */
+}
+
+/* === AVATAR === */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Círculo */
+    object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
+    margin-bottom: 15px;
+    border: 4px solid #fff; /* Borde blanco */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+/* === SECCIONES === */
+section {
+    margin-bottom: 30px; /* Espaciado entre secciones */
+}
+
+section h2 {
+    color: #275b8c; /* Azul profundo para títulos */
+    border-bottom: 2px solid #a7c7e7; /* Línea azul pastel debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* === LISTAS === */
+ul {
+    list-style: none; /* Quita viñetas */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+li p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+.fecha {
+    color: #777;
+    font-size: 0.85em;
+    font-style: italic; /* Estilo de fecha en cursiva */
+}
+
+/* === HABILIDADES === */
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las habilidades pasen a la siguiente línea */
+    gap: 10px; /* Espaciado entre habilidades */
+}
+
+#habilidades li {
+    background-color: #a7c7e7; /* Fondo azul pastel */
+    color: #fff; /* Texto blanco */
+    padding: 8px 16px;
+    border-radius: 20px; /* Forma de píldora */
+    font-weight: 500;
+}
+
+/* === CONTACTO === */
+#contacto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaciado entre elementos de contacto */
+}
+
+#contacto li {
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+#contacto a {
+    color: #275b8c; /* Azul oscuro para enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#contacto a:hover {
+    color: #d8a7b1; /* Rosado empolvado al pasar el mouse */
+}
+
+#contacto i {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #a7c7e7; /* Íconos en azul pastel */
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #a7c7e7; /* Azul pastel */
+    color: #fff;
+    margin-top: 40px;
+    border-radius: 0 0 8px 8px; /* Redondeo inferior */
+    font-size: 0.9em;
+}
+
+/* === BOTÓN FLOTANTE === */
+button#mensajeBtn {
+    background-color: #275b8c; /* Azul profundo */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px; /* Forma ovalada */
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    margin: 30px auto; /* Centrado */
+    transition: background-color 0.3s ease; /* Transición suave al hover */
+}
+
+button#mensajeBtn:hover {
+    background-color: #1f456b; /* Color más oscuro al pasar el mouse */
+}
+
+/* === DISEÑO EN GRID PRINCIPAL === */
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Dos tercios y un tercio */
+    gap: 30px;
+}
+
+/* === FORMULARIO DE CONTACTO === */
+#formulario-contacto {
+    background-color: #eaf2f9; /* Azul muy claro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 8px rgba(167, 199, 231, 0.15); /* Sombra azul pastel suave */
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #275b8c;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a7c7e7; /* Borde azul pastel */
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#formulario-contacto button {
+    background-color: #a7c7e7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover {
+    background-color: #8db1d3; /* Azul pastel más oscuro */
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+#mensaje-enviado {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr; /* Diseño en una sola columna */
+    }
+
+    header {
+        padding: 30px 15px; /* Ajusta el espacio para pantallas pequeñas */
+    }
+
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #habilidades ul,
+    #contacto ul {
+        flex-direction: column; /* Cambia de horizontal a vertical */
+        align-items: flex-start;
+    }
+}
